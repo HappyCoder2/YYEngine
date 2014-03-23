@@ -10,15 +10,19 @@
 #define YYEngineDemo_YYRender_h
 
 #include "YYSprite.h"
+#include <list>
 
 class YYRender
 {
 public:
     static YYRender* shareRender();
+    YYRender();
     void init(void);
     void display();
     void addDisplayObject(YYSprite* sprite);
     void removeDisplayObject(YYSprite* sprite);
+private:
+    std::list<YYSprite*> _spriteList;
 };
 
 #endif

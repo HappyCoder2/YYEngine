@@ -7,3 +7,27 @@
 //
 
 #include "YYRender.h"
+#include <OpenGl/gl.h>
+
+void YYRender::init()
+{
+    std::list<YYSprite*>::iterator iter;
+    YYSprite* tmpSprite;
+    for (iter = _spriteList.begin(); iter != _spriteList.end(); iter++) {
+        tmpSprite = *iter;        
+    }
+}
+
+void YYRender::addDisplayObject(YYSprite *sprite)
+{
+    if (sprite != NULL) {
+        _spriteList.push_back(sprite);
+    }
+}
+
+void YYRender::removeDisplayObject(YYSprite *sprite)
+{
+    if (sprite != NULL) {
+        _spriteList.remove(sprite);
+    }
+}
