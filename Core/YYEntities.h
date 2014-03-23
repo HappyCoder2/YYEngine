@@ -9,10 +9,22 @@
 #ifndef YYEngineDemo_YYEntities_h
 #define YYEngineDemo_YYEntities_h
 
+#include "GL/gl.h"
+
+#define YYP2F(x, y) YYPoint(x, y, 0);
+#define YYP3F(x, y, z) YYPoint(x, y, z);
+
 struct YYPoint
 {
-    float x;
-    float y;
+    GLfloat x;
+    GLfloat y;
 };
 
+struct YYRect
+{
+	GLfloat x;
+	GLfloat y;
+	GLfloat w;
+	GLfloat h;
+};
 #endif

@@ -13,6 +13,20 @@
 
 class YYSprite
 {
+	YYPoint _pos, _scale, _roated, _anchor;
+	YYRect _rect;
+public:
+	void setPosition(YYPoint pos);
+	void setAnchor(YYPoint anchor);
+	void setRoated(YYPoint roated);
+	void setScale(YYPoint scale);
+	void setSize(YYRect rect);
+	
+	YYPoint getPosition();
+	YYPoint getAnchor();
+	YYPoint getRoated();
+	YYPoint getScale();
+	YYRect getSize();
 };
 
 #endif
