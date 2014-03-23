@@ -9,8 +9,12 @@
 #ifndef YYEngineDemo_YYRender_h
 #define YYEngineDemo_YYRender_h
 
-void init(void);
-
-void display(void);
+class YYRender
+{
+public:
+    static YYRender* shareRender();
+    void init(void);
+    void display();
+};
 
 #endif
