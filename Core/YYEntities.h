@@ -14,7 +14,7 @@
 #if (YY_CURRENT_PLATFORM == YY_PLATFORM_WINDOWS)
     #include "GL/gl.h"
 #elif (YY_CURRENT_PLATFORM == YY_PLATFORM_MAC)
-    #include <OpenGl/OpenGL.h>
+    #include <GLUT/GLUT.h>
 #endif
 
 

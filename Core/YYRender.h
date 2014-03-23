@@ -12,6 +12,8 @@
 #include "YYSprite.h"
 #include <list>
 
+class YYSprite;
+
 class YYRender
 {
 public:
