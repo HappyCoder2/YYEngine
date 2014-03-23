@@ -9,12 +9,16 @@
 #ifndef YYEngineDemo_YYRender_h
 #define YYEngineDemo_YYRender_h
 
+#include "YYSprite.h"
+
 class YYRender
 {
 public:
     static YYRender* shareRender();
     void init(void);
     void display();
+    void addDisplayObject(YYSprite* sprite);
+    void removeDisplayObject(YYSprite* sprite);
 };
 
 #endif
