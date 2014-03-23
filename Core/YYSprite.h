@@ -10,23 +10,26 @@
 #define YYEngineDemo_YYSprite_h
 
 #include "YYEntities.h"
+#include "YYRender.h"
 
 class YYSprite
 {
 	YYPoint _pos, _scale, _roated, _anchor;
 	YYRect _rect;
+	bool _invaildData = false;
 public:
+	YYSprite();
 	void setPosition(YYPoint pos);
 	void setAnchor(YYPoint anchor);
 	void setRoated(YYPoint roated);
 	void setScale(YYPoint scale);
-	void setSize(YYRect rect);
+	void setRect(YYRect rect);
 	
 	YYPoint getPosition();
 	YYPoint getAnchor();
 	YYPoint getRoated();
 	YYPoint getScale();
-	YYRect getSize();
+	YYRect getRect();
 };
 
 #endif

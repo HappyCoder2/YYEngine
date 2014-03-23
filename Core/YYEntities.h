@@ -34,4 +34,19 @@ struct YYRect
 	GLfloat w;
 	GLfloat h;
 };
+
+bool equalYYPoint(YYPoint a, YYPoint b)
+{
+	if (a.x == b.x && a.y == b.y)
+		return true;
+	return false;
+}
+
+bool equalYYRect(YYRect a, YYRect b)
+{
+	if (a.x == b.x && a.y == b.y && a.w == b.w && a.h == b.h)
+		return true;
+	return false;
+}
+
 #endif
