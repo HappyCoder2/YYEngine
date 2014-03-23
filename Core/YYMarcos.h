@@ -10,7 +10,6 @@
 #define YYEngineDemo_YYMarcos_h
 
 #define YY_PLATFORM_MAC 1
-
 #define YY_PLATFORM_WINDOWS 2
 
 #endif

@@ -10,7 +10,6 @@
 #define YYEngineDemo_YYSprite_h
 
 #include "YYEntities.h"
-#include "YYRender.h"
 
 class YYSprite
 {
@@ -30,6 +29,6 @@ public:
 	YYPoint getRoated();
 	YYPoint getScale();
 	YYSize getSize();
-};
+    };
 
 #endif

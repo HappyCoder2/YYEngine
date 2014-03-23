@@ -17,8 +17,8 @@
     #include <GLUT/GLUT.h>
 #endif
 
-
 #define YYP2F(x, y) YYPoint(x, y, 0);
+
 #define YYP3F(x, y, z) YYPoint(x, y, z);
 
 struct YYPoint
@@ -42,21 +42,21 @@ struct YYRect
 	GLfloat h;
 };
 
-bool equalYYPoint(YYPoint a, YYPoint b)
+inline bool equalYYPoint(struct YYPoint a,struct YYPoint b)
 {
 	if (a.x == b.x && a.y == b.y)
 		return true;
 	return false;
 }
 
-bool equalYYSize(YYSize a, YYSize b)
+inline bool equalYYSize(struct YYSize a,struct YYSize b)
 {
 	if (a.w == b.w && a.h == b.h)
 		return true;
 	return false;
 }
 
-bool equalYYRect(YYRect a, YYRect b)
+inline bool equalYYRect(struct YYRect a,struct YYRect b)
 {
 	if (a.x == b.x && a.y == b.y && a.w == b.w && a.h == b.h)
 		return true;

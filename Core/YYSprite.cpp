@@ -1,4 +1,5 @@
 #include "YYSprite.h"
+#include "YYRender.h"
 
 YYSprite::YYSprite()
 {
