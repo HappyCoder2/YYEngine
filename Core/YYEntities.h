@@ -9,7 +9,14 @@
 #ifndef YYEngineDemo_YYEntities_h
 #define YYEngineDemo_YYEntities_h
 
-#include "GL/gl.h"
+#include "YYMarcos.h"
+
+#if (YY_CURRENT_PLATFORM == YY_PLATFORM_WINDOWS)
+    #include "GL/gl.h"
+#elif (YY_CURRENT_PLATFORM == YY_PLATFORM_MAC)
+    #include <OpenGl/OpenGL.h>
+#endif
+
 
 #define YYP2F(x, y) YYPoint(x, y, 0);
 #define YYP3F(x, y, z) YYPoint(x, y, z);
