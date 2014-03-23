@@ -15,7 +15,7 @@
 class YYSprite
 {
 	YYPoint _pos, _scale, _roated, _anchor;
-	YYRect _rect;
+	YYSize _size;
 	bool _invaildData = false;
 public:
 	YYSprite();
@@ -23,13 +23,13 @@ public:
 	void setAnchor(YYPoint anchor);
 	void setRoated(YYPoint roated);
 	void setScale(YYPoint scale);
-	void setRect(YYRect rect);
+	void setSize(YYSize size);
 	
 	YYPoint getPosition();
 	YYPoint getAnchor();
 	YYPoint getRoated();
 	YYPoint getScale();
-	YYRect getRect();
+	YYSize getSize();
 };
 
 #endif

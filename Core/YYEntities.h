@@ -25,6 +25,13 @@ struct YYPoint
 {
     GLfloat x;
     GLfloat y;
+	GLfloat z;
+};
+
+struct YYSize
+{
+	GLfloat w;
+	GLfloat h;
 };
 
 struct YYRect
@@ -38,6 +45,13 @@ struct YYRect
 bool equalYYPoint(YYPoint a, YYPoint b)
 {
 	if (a.x == b.x && a.y == b.y)
+		return true;
+	return false;
+}
+
+bool equalYYSize(YYSize a, YYSize b)
+{
+	if (a.w == b.w && a.h == b.h)
 		return true;
 	return false;
 }

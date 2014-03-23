@@ -35,11 +35,11 @@ void YYSprite::setRoated(YYPoint roated)
 	_roated = roated;
 	_invaildData = true;
 }
-void YYSprite::setRect(YYRect rect)
+void YYSprite::setSize(YYSize size)
 {
-	if (!equalYYRect(_rect, rect))
+	if (!equalYYSize(_size, size))
 		return;
-	_rect = rect;
+	_size = size;
 	_invaildData = true;
 }
 
@@ -59,7 +59,7 @@ YYPoint YYSprite::getRoated()
 {
 	return _roated;
 }
-YYRect YYSprite::getRect()
+YYSize YYSprite::getSize()
 {
-	return _rect;
+	return _size;
 }
